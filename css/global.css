@@ -1,12 +1,26 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Arial";
     background-color: rgb(210, 220, 210);
 }
 h1 {
-    font-size: 32px; text-align: center;
+    font-size: 36px; text-align: center;
+}
+h2 {
+    font-size: 30px;
+    margin-top: 50px;
+}
+h3 {
+    font-size: 24px;
+    margin-top: 30px;
 }
 p {
-    font-size: 18px; text-align: left;
+    font-size: 18px; line-height: 1.5;
+}
+ul {
+    font-size: 18px; line-height: 1.5;
 }
 
 /*table*/
@@ -45,12 +59,17 @@ td {
 }
 .top-bar-btn {
     float: left;
-    padding: 18px 15px 18px 15px;
-    background-color: rgb(150, 170, 150);
+    padding: 18px 15px 5px 15px;
+    background-color: rgb(150, 170, 150, 0);
     font-size: 20px; text-align: center; color: rgb(210, 240, 215); text-decoration: none;
+    /*animation*/
+    background-image: linear-gradient(to right, rgb(210, 240, 215, 0) 0%, rgb(210, 240, 215, 1) 50%, rgb(210, 240, 215, 0) 100%);
+    background-position: 50% 100%; background-size: 0% 2px; background-repeat: no-repeat;
 }
 .top-bar-btn:hover {
-    background-color: rgb(180, 190, 200);
+    /*animation*/
+    background-size: 100% 2px;
+    transition: background-size 0.3s;
 }
 #top-bar-user {
     float: right;
@@ -72,9 +91,38 @@ td {
     top: 60px; left: 0px;
     width: 100%;
 }
+
+/*image holder*/
+.image-holder {
+    margin: 0px 40px 40px 40px;
+    border: solid 1px rgb(150, 150, 150);
+}
+.image-holder.left-align {
+    margin-left: 0px;
+}
+.image-holder.right-align {
+    margin-right: 0px;
+}
+.image-holder img {
+    width: 100%;
+}
+.image-holder p {
+    font-size: 14px;
+    margin: 10px 10px 10px 10px;
+}
+
+/*text block*/
 .text-block {
     width: 90%;
-    margin-top: 50px; margin-bottom: 50px; margin-left: 5%;
+    margin: 70px 5% 70px 5%;
+    scroll-margin-top: 150px;
+}
+
+/*image block*/
+.image-block {
+    display: flex; flex-direction: row;
+    width: 100%;
+    margin: 90px 0% 90px 0%;
 }
 
 /*ELMENENTS*/

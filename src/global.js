@@ -14,12 +14,6 @@ function format(str, varArr, spChar = '%') {
 async function fetchText(file) {
     return await (await fetch(file)).text();
 }
-async function getUserData() {
-    return await fetchText("data/users.json");
-}
-function getProblemData() {
-    return fetchText("data/problems.json");
-}
 
 // viewport resize
 let resizeTasks = [];
