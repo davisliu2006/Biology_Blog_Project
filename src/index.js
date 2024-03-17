@@ -12,9 +12,9 @@ window.onscroll = function() {
         secBar.style.position = "fixed";
         secBar.style.top = "60px";
         if (dScrY > 0) {
-            secBarY = Math.max(10, secBarY -= dScrY/5);
+            // secBarY = Math.max(10, secBarY -= dScrY/5);
         } else {
-            secBarY = Math.min(60, secBarY -= dScrY/5);
+            // secBarY = Math.min(60, secBarY -= dScrY/5);
         }
         secBar.style.top = secBarY+"px";
     } else {
