@@ -53,6 +53,21 @@
                 background-size: 100% 2px;
                 transition: background-size 0.3s;
             }
+            #portrait {
+                float: right;
+                border: none;
+                margin: 0px 0px 40px 40px;
+            }
+            #portrait img {
+                width: 200px;
+                border-radius: 100px;
+                border: solid 3px black;
+                background-color: rgb(200, 200, 200);
+            }
+            #portrait p {
+                text-align: left;
+                font-size: 16px;
+            }
         </style>
     </head>
 
@@ -87,11 +102,14 @@
 
             <!--about-->
             <div id="about" class="text-block" style="margin-top: 120px">
-                <p>
-                    <b>Author:</b> Davis Liu<br>
-                    <b>Date:</b> March 20, 2024
-                </p>
                 <h2>About the Author</h2>
+                <div id="portrait">
+                    <img src="images/portrait.png" alt="">
+                    <p>
+                        <b>Author:</b> Davis Liu<br>
+                        <b>Published:</b> March 20, 2024
+                    </p>
+                </div>
                 <p>
                     Hello, everyone! My name is Davis and I am a 3<sup>rd</sup> year student studying Health Sciences at McMaster University. My passion lies in studying emerging medical technologies and the ways they can be used to improve human life.
                 </p>
@@ -109,8 +127,7 @@
                 <div class="image-holder left-align" style="width: 500px; float: left;">
                     <img src="images/alternative.jpg" alt="Alternative Medicine">
                     <p>
-                        <b>Common Alternative and Complementary Practices</b><br>
-                        Source: https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnri1486/MediaObjects/41577_2004_Article_BFnri1486_Fig1_HTML.jpg
+                        <b><a href="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnri1486/MediaObjects/41577_2004_Article_BFnri1486_Fig1_HTML.jpg" target="_blank">Common Alternative and Complementary Practices</a></b>
                     </p>
                 </div>
                 <p>
@@ -123,7 +140,6 @@
                     In today's blog post, we'll look into various practices used outside of conventional medical treatment from a scientific perspective and deciding — are these treatments effective and safe alternatives to conventional medicine? In particular, we will be looking into the practices of <b>naturopathy</b>, <b>homeopathy</b>, <b>manipulative therapies</b>, and <b>herbalism</b>, which are commonly used forms of alternative and complementary medicine in the west.
                 </p>
             </div>
-
             <div id="intro-img" class="image-block">
                 <img src="images/tcm.jpg" alt="" style="width: 53.4%;">
                 <img src="images/twm.png" alt="" style="width: 46.5%;">
@@ -135,8 +151,7 @@
                 <div class="image-holder right-align" style="width: 500px; float: right;">
                     <img src="images/principles.jpg" alt="Principles of Naturopathy">
                     <p>
-                        <b>Principles of Naturopathy</b><br>
-                        Source: https://greenlakenaturalmedicine.com/wp-content/uploads/2017/06/6-principles-of-naturopathic-medicine2.jpg
+                        <b><a href="https://greenlakenaturalmedicine.com/wp-content/uploads/2017/06/6-principles-of-naturopathic-medicine2.jpg" target="_blank">Principles of Naturopathy</a></b>
                     </p>
                 </div>
                 <p>
@@ -166,8 +181,7 @@
                 <div class="image-holder right-align" style="float: right; width: 500px;">
                     <img src="images/homeopathy-dilution.jpg" alt="Homeopathy Dilution">
                     <p>
-                        <b>Dilutions in Homeopathy</b><br>
-                        Source: https://hpathy.com/wp-content/uploads/2005/03/homeopathic-dilutions.jpg?ezimgfmt=ng%3Awebp%2Fngcb5%2Frs%3Adevice%2Frscb5-2
+                        <b><a href="https://hpathy.com/wp-content/uploads/2005/03/homeopathic-dilutions.jpg?ezimgfmt=ng%3Awebp%2Fngcb5%2Frs%3Adevice%2Frscb5-2" target="_blank">Dilutions in Homeopathy</a></b><br>
                     </p>
                 </div>
                 <p>
@@ -184,13 +198,11 @@
                 <div class="image-holder left-align" style="width: 1000px; border: none; margin-top: 40px;">
                     <img src="images/like-cures-like.png" alt="Like Cures Like">
                     <p>
-                        <b>Principles of Homeopathy — Like Cures Like</b><br>
-                        Source: https://i0.wp.com/www.factsandreasons.com/wp-content/uploads/2021/03/28_EN-e1615386811587.jpeg?fit=1377%2C609&ssl=1
+                        <b><a href="https://i0.wp.com/www.factsandreasons.com/wp-content/uploads/2021/03/28_EN-e1615386811587.jpeg?fit=1377%2C609&ssl=1" target="_blank">Principles of Homeopathy — Like Cures Like</a></b>
                     </p>
                 </div>
             </div>
-
-            <div id="intro-img" class="image-block">
+            <div id="homeopathy-img" class="image-block">
                 <img src="images/homeopathy.jpg" alt="" style="width: 51.5%;">
                 <img src="images/homeopathy2.jpg" alt="" style="width: 48.4%;">
             </div>
@@ -210,7 +222,7 @@
                 <div class="image-holder left-align" style="float: left; width: 400px;">
                     <img src="images/chiropractic-benefits.png" alt="Chiropractic Benefits">
                     <p>
-                        <b>Chiropractic Benfits</b><br>
+                        <b><a href="https://i0.wp.com/peakatlaschiro.com/wp-content/uploads/2019/07/AO23.gif?fit=550%2C632&ssl=1" target="_blank">Chiropractic Benfits</a></b><br>
                     </p>
                 </div>
                 <h3>Effectiveness</h3>
@@ -235,6 +247,12 @@
             </div>
             <div id="osteopathy" class="text-block">
                 <h2>Osteopathy</h2>
+                <div class="image-holder right-align" style="width: 400px; float: right">
+                    <img src="images/osteopathy.jpg" alt="Osteopathy">
+                    <p>
+                        <b>Osteopathy</b><br>
+                    </p>
+                </div>
                 <p>
                     <b>Osteopathy</b> is a type of medical care that focuses on the physical manipulation of the tissues, muscles, and bones to treat illnesses. At a glance, osteopathy appears to be described similarly to chiropractic therapy. They both focus on the use of <b>manipulative therapy</b> to treat pain-related conditions and are <b>holistic approaches</b> to the health of the whole body. They are both commonly used <b>complementary treatments</b> that focus on natrual healing over use of surgery and medications. However, osteopathy has several key differences compared to chiropractic therapy.
                 </p>
@@ -328,26 +346,35 @@
                     Pharmaceutical drugs can also interact with other substances. However, whereas the effects and interactions of pharmaceutical medications are rigorously researched, those of herbs are often not as clearly studied and are usually theorized from indirect trials such as in animal or cellular studies. For those using herbal medications, it is important to consult between medical and naturopathic doctors to ensure that they work together to avoid potential drug interactions.
                 </p>
             </div>
+            <div id="herbalism-img" class="image-block">
+                <img src="images/herbalism.jpg" alt="" style="width: 56.0%;">
+                <img src="images/herbalism2.png" alt="" style="width: 43.9%;">
+            </div>
 
             <!--antioxidants-->
             <div id="antioxidants" class="text-block">
                 <h2>Naturopathy and Antioxidants</h2>
                 <p>
-                    Many of us have often heard of the importance of antioxidants in a healthy diet and their benefits to preventing chronic illnesses such as cancer and heart disease. Naturopathic medicine often encourages the consumption of food containing antioxidants, which are found in a variety of herbal medications. But you might have been wondering: what are antioxidants and what do they do?
+                    Many of us have often heard of the importance of <b>antioxidants</b> in a healthy diet and their benefits to preventing chronic illnesses such as cancer and heart disease. Naturopathic medicine often encourages the consumption of food containing antioxidants, which are found in a variety of herbs. But you might have been wondering: what are antioxidants and what do they do?
                 </p>
                 <h3>What are free radicals?</h3>
+                <div class="image-holder right-align" style="width: 500px; float: right;">
+                    <img src="images/free-radical-source.png" alt="Sources of Free Radicals" style="background-color: white;">
+                    <p>
+                        <b><a href="https://solesence.com/wp-content/uploads/2017/12/shutterstock_295823912.png" target="_blank">Sources of Free Radicals</a></b>
+                    </p>
+                </div>
                 <p>
-                    To understand thre function of antioxidants, we must first understand the substances that they act against — free radicals. In most stable molecular substances, electrons are shared to fill the orbitals of each the valance shells. Orbitals can contain up to 2 electrons, each with opposite spin values, which means that electrons are typically paired. However, free radicals are substances that can stably exist with unpaired electrons, many of which involve nitrogen and oxygen species. By lacking electrons, they have oxidative tendencies and are highly reactive, being able to alter lipids, proteins, and nucleic acids. A simple example of a free radical is nitrogen dioxide, shown below, where nitrogen has a single unpaired electron.
+                    To understand thre function of antioxidants, we must first understand the substances that they act against — <b>free radicals</b>. In most stable molecular substances, electrons are shared to fill the orbitals of each the valance shells. Orbitals can contain up to 2 electrons, each with opposite spin values, which means that electrons are typically paired. However, free radicals are substances that can <b>stably exist with unpaired electrons</b>, many of which involve nitrogen and oxygen species. By lacking electrons, they have <b>oxidative tendencies</b> and are <b>highly reactive</b>, being able to alter lipids, proteins, and nucleic acids. A simple example of a free radical is nitrogen dioxide, as shown below, where nitrogen has a single unpaired electron due the odd number of total valence electrons in the molecule.
                 </p>
                 <div class="image-holder left-align" style="width: 500px;">
                     <img src="images/no2.png" alt="Nitrogen Dioxide" style="background-color: white;">
                     <p>
-                        <b>Nitrogen Dioxide, A Free Radical</b><br>
-                        https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/NO2-Lewis-resonance.png/1200px-NO2-Lewis-resonance.png
+                        <b><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/NO2-Lewis-resonance.png/1200px-NO2-Lewis-resonance.png" target="_blank">Nitrogen Dioxide, A Free Radical</a></b>
                     </p>
                 </div>
                 <p>
-                    Free radicals are linked to increasing the risk of diseases such as cancers and heart disease. Free radicals are produced by the body through normal metabolism and can also result from the body's exposure to chemical carcinogens and radiation.
+                    Because they can react with nucleic acids and proteins, free radicals can damage the body's genetic information and cellular machinery and are linked to increasing the risk of diseases such as cancers and heart disease. Free radicals are produced by the body through normal metabolism and can also result from the body's exposure to chemical carcinogens and radiation.
                 </p>
                 <h3>What are antioxidants?</h3>
                 <p>
@@ -361,13 +388,25 @@
                 <div class="image-holder left-align" style="width: 500px;">
                     <img src="images/antioxidant.jpg" alt="Antioxidant">
                     <p>
-                        <b>Antioxidant Mechanism against Free Radicals</b><br>
-                        https://cellgs.e2ecdn.co.uk/Pages/Free-radicals-reactive-oxygen-species-anti-oxidants.jpg
+                        <b><a href="https://cellgs.e2ecdn.co.uk/Pages/Free-radicals-reactive-oxygen-species-anti-oxidants.jpg" target="_blank">Antioxidant Mechanism against Free Radicals</a></b>
+                        
                     </p>
                 </div>
             </div>
             <div id="conclusion" class="text-block">
                 <h2>Conclusion</h2>
+                <p>
+                    So are treatments used outside of conventional medicine effective and safe? The answer depends the type of treatment being used.
+                </p>
+                <p>
+                    Some treatments such as chiropractic therapy and osteopathy show positive results on relieving patients of symptoms and pain and can reduce the need for medications with potential side effects. However, that does not make such manipulative therapies risk-free, as outlined earlier in this blog, and it is important for patients to understand them before treatment. These therapies are widely accepted by medical professionals.
+                </p>
+                <p>
+                    On the other hand, practices such as homeopathy contradict modern science and should not be considered reliable treatments.
+                </p>
+                <p>
+                    In general, natural and alternative remedies should not be considered substitutes for medical treatment, especially for serious conditions where lack of effective treatment can be dangerous for the patient. However, with proper consultation with medical professionals, 
+                </p>
             </div>
             <div id="references" class="text-block">
                 <h2>References</h2>
