@@ -129,6 +129,9 @@ td {
     margin: 70px 8% 70px 8%;
     scroll-margin-top: 150px;
 }
+.blur-text {
+    filter: blur(5px);
+}
 
 /*image block*/
 .image-block {
