@@ -103,26 +103,6 @@ td {
     width: 100%;
 }
 
-/*image holder*/
-.image-holder {
-    margin: 5px 40px 40px 40px;
-    border: solid 1px rgb(150, 150, 150);
-    border-radius: 0px 0px 10px 10px;
-}
-.image-holder.left-align {
-    margin-left: 0px;
-}
-.image-holder.right-align {
-    margin-right: 0px;
-}
-.image-holder img {
-    width: 100%;
-}
-.image-holder p {
-    font-size: 14px;
-    margin: 10px 10px 10px 10px;
-}
-
 /*text block*/
 .text-block {
     width: 84%;
@@ -155,10 +135,31 @@ td {
 .button:hover {
     background-color: rgb(180, 180, 180);
 }
+
 .text-entry {
     border: solid 1px;
     font-size: 16px;
     padding: 4px 4px 4px 4px;
     font-size: 16px;
     cursor: text;
+}
+
+/*image holder*/
+.image-holder {
+    margin: 5px 40px 40px 40px;
+    border: solid 1px rgb(150, 150, 150);
+    border-radius: 0px 0px 10px 10px;
+}
+.image-holder.left-align {
+    margin-left: 0px;
+}
+.image-holder.right-align {
+    margin-right: 0px;
+}
+.image-holder img {
+    width: 100%;
+}
+.image-holder p {
+    font-size: 14px;
+    margin: 10px 10px 10px 10px;
 }
